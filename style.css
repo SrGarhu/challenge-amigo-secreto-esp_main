@@ -1,11 +1,11 @@
 :root {
-    --color-primary: #4B69FD;
-    --color-secondary: #FFF9EB;
-    --color-tertiary: #C4C4C4;
-    --color-button: #fe652b;
+    --color-primary: #540199;
+    --color-secondary: #91c2f0;
+    --color-tertiary: #cc4bd8;
+    --color-button: #cd77ff;
     --color-button-hover: #e55720;
-    --color-text: #444444;
-    --color-white: #FFFFFF;
+    --color-text: #000000;
+    --color-white: #000000;
 }
 
 /* Estilos generales */
@@ -160,3 +160,4 @@ ul {
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+
