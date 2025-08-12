@@ -6,13 +6,14 @@ function agregarAmigo() {
     let nombre = document.getElementById("amigo").value.trim();
 
     // Validar que no esté vacío
-    if (nombre === "") {
+    if (nombre === "")
+    {
         alert("Por favor escribe un nombre");
         return;
     }
 
      // Validar solo letras y espacios (simple)
-    if (!/^[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+$/.test(nombre)) 
+    if (!/^[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+$/.test(nombre))
     {
         alert("Solo se permiten letras y espacios");
         return;
@@ -28,7 +29,8 @@ function mostrarLista() {
     let lista = document.getElementById("listaAmigos");
     lista.innerHTML = "";
 
-    for (let i = 0; i < amigos.length; i++) {
+    for (let i = 0; i < amigos.length; i++)
+    {
         let item = document.createElement("li");
         item.textContent = amigos[i];
         lista.appendChild(item);
@@ -37,9 +39,12 @@ function mostrarLista() {
 
 // Sortear un amigo
 function sortearAmigo() {
-    if (amigos.length < 2) {
+    if (amigos.length < 2)
+    {
         alert("Debes ingresar al menos 2 nombres");
-    } else {
+    }
+    else
+    {
         let aleatorio = Math.floor(Math.random() * amigos.length);
         let resultado = document.getElementById("resultado");
         resultado.innerHTML = "";
