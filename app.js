@@ -5,12 +5,6 @@ let amigos = [];
 function agregarAmigo() {
     let nombre = document.getElementById("amigo").value.trim();
 
-    // Validar que no esté vacío
-    if (nombre === "")
-    {
-        alert("Por favor escribe un nombre");
-        return;
-    }
 
      // Validar solo letras y espacios (simple)
     if (!/^[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+$/.test(nombre))
@@ -54,3 +48,4 @@ function sortearAmigo() {
         resultado.appendChild(item);
     }
 }
+
